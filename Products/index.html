@@ -33,7 +33,7 @@
     </div>
   </header>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light px-lg-5">
     <div class="container-fluid">
       <h1 class="mx-2 mx-lg-5">Appleku.</h1>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -55,16 +55,59 @@
             <a class="nav-link" href="/about/index.html">About us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact us</a>
+            <a class="nav-link" href="/Contac_Us/index.html">Contact us</a>
           </li>
         </ul>
-        <button class="btn1"><i class="fa-regular fa-user"></i>Login / Register</button>
-        <button class="btn2"><i class="fa-solid fa-cart-shopping"></i></button>
+        <button class="btn1" data-bs-toggle="modal" data-bs-target="#modalSignin"><i
+            class="fa-regular fa-user"></i>Login / Register</button>
+        <a href="/Cart/index.html"><button class="btn2"><i class="fa-solid fa-cart-shopping"></i></button></a>
         <a href="/Spesifikasi/index.html"><button class="btn3" type="submit"><i
               class="fa-solid fa-magnifying-glass"></i></button></a>
       </div>
     </div>
   </nav>
+
+
+  <!-- Modal dialog login -->
+  <div class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" id="modalSignin">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content rounded-4 shadow">
+        <div class="modal-header p-5 pb-4 border-bottom-0">
+          <h1 class="fw-bold mb-0 fs-2">Login</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body p-5 pt-0">
+          <form class="me-0">
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control rounded-3" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Password">
+              <label for="floatingPassword">Password</label>
+            </div>
+            <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Login</button>
+            <small class="text-body-secondary">By clicking Login, you agree to the terms of use.</small>
+            <hr class="my-4">
+            <h2 class="fs-5 fw-bold mb-3">atau login dengan</h2>
+            <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
+              <i class="fa-brands fa-twitter" style="color: #74C0FC;"></i>
+              Sign up with Twitter
+            </button>
+            <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
+              <i class="fa-brands fa-facebook" style="color: #1a9cff;"></i>
+              Sign up with Facebook
+            </button>
+            <br>
+            <br>
+            <small class="text-body-secondary">Belum punya akun? <a href="/Daftar/index.html">Daftar
+                sekarang</a></small>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <section class="text-center text-white container-lg rounded-3 my-3 d-flex justify-content-center align-items-center"
     style="
@@ -93,7 +136,7 @@
               </h5>
             </div>
             <div class="btn-container">
-              <a href="#" class="btn btn-primary" style="
+              <a href="/DetailProducts/index.html" class="btn btn-primary" style="
                   --bs-btn-padding-y: 0.25rem;
                   --bs-btn-padding-x: 1rem;
                   --bs-btn-font-size: 1rem;
@@ -121,7 +164,7 @@
               </h5>
             </div>
             <div class="btn-container">
-              <a href="#" class="btn btn-primary" style="
+              <a href="/DetailProducts/index.html" class="btn btn-primary" style="
                   --bs-btn-padding-y: 0.25rem;
                   --bs-btn-padding-x: 1rem;
                   --bs-btn-font-size: 1rem;
@@ -149,7 +192,7 @@
               </h5>
             </div>
             <div class="btn-container">
-              <a href="#" class="btn btn-primary" style="
+              <a href="/DetailProducts/index.html" class="btn btn-primary" style="
                   --bs-btn-padding-y: 0.25rem;
                   --bs-btn-padding-x: 1rem;
                   --bs-btn-font-size: 1rem;
@@ -177,7 +220,7 @@
               </h5>
             </div>
             <div class="btn-container">
-              <a href="#" class="btn btn-primary" style="
+              <a href="/DetailProducts/index.html" class="btn btn-primary" style="
                   --bs-btn-padding-y: 0.25rem;
                   --bs-btn-padding-x: 1rem;
                   --bs-btn-font-size: 1rem;
@@ -205,7 +248,7 @@
               </h5>
             </div>
             <div class="btn-container">
-              <a href="#" class="btn btn-primary" style="
+              <a href="/DetailProducts/index.html" class="btn btn-primary" style="
                         --bs-btn-padding-y: 0.25rem;
                         --bs-btn-padding-x: 1rem;
                         --bs-btn-font-size: 1rem;
@@ -233,7 +276,7 @@
               </h5>
             </div>
             <div class="btn-container">
-              <a href="#" class="btn btn-primary" style="
+              <a href="/DetailProducts/index.html" class="btn btn-primary" style="
                         --bs-btn-padding-y: 0.25rem;
                         --bs-btn-padding-x: 1rem;
                         --bs-btn-font-size: 1rem;
@@ -264,11 +307,11 @@
                 Apple iPad Air (Gen 5) 64GB Garansi Resmi - Gray
               </p>
               <h5 class="card-title mb-4" style="font-size: calc(12px + 0.5vw); color: #438db8">
-                Rp. 12.000.000
+                Rp. 10.000.000
               </h5>
             </div>
             <div class="btn-container">
-              <a href="#" class="btn btn-primary" style="
+              <a href="/DetailProducts/index.html" class="btn btn-primary" style="
                   --bs-btn-padding-y: 0.25rem;
                   --bs-btn-padding-x: 1rem;
                   --bs-btn-font-size: 1rem;
@@ -289,14 +332,14 @@
           <div class="card-body d-flex flex-column justify-content-between">
             <div class="card-title-container">
               <p class="card-title" style="font-size: calc(8px + 0.5vw)">
-                Apple iPad Air (Gen 5) 64GB Garansi Resmi - Gray
+                Apple iPad Air 4 64GB Garansi Resmi - Gray
               </p>
               <h5 class="card-title mb-4" style="font-size: calc(12px + 0.5vw); color: #438db8">
-                Rp. 12.000.000
+                Rp. 9.000.000
               </h5>
             </div>
             <div class="btn-container">
-              <a href="#" class="btn btn-primary" style="
+              <a href="/DetailProducts/index.html" class="btn btn-primary" style="
                   --bs-btn-padding-y: 0.25rem;
                   --bs-btn-padding-x: 1rem;
                   --bs-btn-font-size: 1rem;
@@ -317,14 +360,14 @@
           <div class="card-body d-flex flex-column justify-content-between">
             <div class="card-title-container">
               <p class="card-title" style="font-size: calc(8px + 0.5vw)">
-                Apple iPad Air (Gen 5) 64GB Garansi Resmi - Gray
+                Apple iPad Gen 5 64GB Resmi - Gray
               </p>
               <h5 class="card-title mb-4" style="font-size: calc(12px + 0.5vw); color: #438db8">
-                Rp. 12.000.000
+                Rp. 7.000.000
               </h5>
             </div>
             <div class="btn-container">
-              <a href="#" class="btn btn-primary" style="
+              <a href="/DetailProducts/index.html" class="btn btn-primary" style="
                   --bs-btn-padding-y: 0.25rem;
                   --bs-btn-padding-x: 1rem;
                   --bs-btn-font-size: 1rem;
@@ -345,14 +388,14 @@
           <div class="card-body d-flex flex-column justify-content-between">
             <div class="card-title-container">
               <p class="card-title" style="font-size: calc(8px + 0.5vw)">
-                Apple iPad Air (Gen 5) 64GB Garansi Resmi - Gray
+                Apple iPad Pro 128GB Garansi Resmi - Gray
               </p>
               <h5 class="card-title mb-4" style="font-size: calc(12px + 0.5vw); color: #438db8">
-                Rp. 12.000.000
+                Rp. 9.200.000
               </h5>
             </div>
             <div class="btn-container">
-              <a href="#" class="btn btn-primary" style="
+              <a href="/DetailProducts/index.html" class="btn btn-primary" style="
                   --bs-btn-padding-y: 0.25rem;
                   --bs-btn-padding-x: 1rem;
                   --bs-btn-font-size: 1rem;
@@ -373,14 +416,14 @@
           <div class="card-body d-flex flex-column justify-content-between">
             <div class="card-title-container">
               <p class="card-title" style="font-size: calc(8px + 0.5vw)">
-                Apple iPad Air (Gen 5) 64GB Garansi Resmi - Gray
+                Apple iPad Air 128Gb Resmi - Gray
               </p>
               <h5 class="card-title mb-4" style="font-size: calc(12px + 0.5vw); color: #438db8">
-                Rp. 12.000.000
+                Rp. 8.600.000
               </h5>
             </div>
             <div class="btn-container">
-              <a href="#" class="btn btn-primary" style="
+              <a href="/DetailProducts/index.html" class="btn btn-primary" style="
                   --bs-btn-padding-y: 0.25rem;
                   --bs-btn-padding-x: 1rem;
                   --bs-btn-font-size: 1rem;
@@ -405,25 +448,28 @@
           <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
             <h1 style="color: #438db8;">Appleku.</h1>
           </a>
-          <p class="text-white">alamat</p>
+          <p class="text-white">123 Main Street, City, Country</p>
         </div>
 
         <div class="col mb-3">
           <h5>Navigasi</h5>
           <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Home</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Benefits</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Best Seller</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Produk Kami</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="/Homepage/index.html" class="nav-link p-0 text-white">Home</a></li>
+            <li class="nav-item mb-2"><a href="/Homepage/index.html" class="nav-link p-0 text-white">Benefits</a></li>
+            <li class="nav-item mb-2"><a href="/Homepage/index.html" class="nav-link p-0 text-white">Best Seller</a>
+            </li>
+            <li class="nav-item mb-2"><a href="/Homepage/index.html" class="nav-link p-0 text-white">Produk Kami</a>
+            </li>
+            <li class="nav-item mb-2"><a href="/Homepage/index.html" class="nav-link p-0 text-white">FAQs</a></li>
           </ul>
         </div>
 
         <div class="col mb-3">
           <h5>Informasi</h5>
           <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Contact Us</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">About Us</a></li>
+            <li class="nav-item mb-2"><a href="/Contac_Us/index.html" class="nav-link p-0 text-white">Contact Us</a>
+            </li>
+            <li class="nav-item mb-2"><a href="/about/index.html" class="nav-link p-0 text-white">About Us</a></li>
           </ul>
         </div>
 

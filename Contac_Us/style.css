@@ -1,8 +1,3 @@
-body {
-  margin: 0px;
-  padding: 0px;
-}
-
 /* HEADER */
 header {
   display: flex;
@@ -98,10 +93,6 @@ nav ul li {
   color: #438dbb !important;
 }
 
-form {
-  margin-right: 95px;
-}
-
 .btn1,
 .btn2,
 .btn3 {
@@ -142,8 +133,20 @@ form {
 /* HEADER */
 @media screen and (max-width: 1300px) {
   header {
-    text-align: center;
+    padding-left: 60px;
+    padding-right: 60px;
   }
+
+  header .sosmed {
+    width: 185px;
+  }
+
+
+  header .text h5 {
+    font-size: 18px;
+  }
+
+  /* HEADER */
 
   /* NAVBAR */
   nav h1 {
@@ -155,4 +158,149 @@ form {
     font-size: 15px;
     font-weight: 700;
   }
+
+
+  /* NAVBAR */
+}
+
+/* CONTAC US */
+.container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+h1,
+.brand {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+h1 {
+  color: black;
+}
+
+.brand {
+  margin-left: 20px;
+  font-weight: 700;
+  color: #438dbb;
+}
+
+.info-box {
+  display: flex;
+  align-items: center;
+}
+
+.info-box i {
+  margin-right: 10px;
+}
+
+.info-box h6,
+.info-box p {
+  margin: 0;
+}
+
+.info-box-text {
+  display: inline-block;
+}
+
+.email {
+  display: flex;
+  color: black;
+}
+
+.email i {
+  cursor: pointer;
+  padding-right: 8px;
+  padding-top: 6px;
+}
+
+.email h6 {
+  text-align: right;
+  margin-left: 10px;
+}
+
+.formContac {
+  background-color: white;
+  color: black;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.formContac h1,
+.brand {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+h1 {
+  color: black;
+}
+
+.brand {
+  margin-left: 20px;
+  font-weight: 700;
+  color: #438dbb;
+}
+
+.formUs {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.additional-content {
+  text-align: center;
+}
+
+.additional-content img {
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.additional-content button {
+  display: block;
+  margin: 0 auto;
+}
+
+.column {
+  flex: 1;
+  padding: 20px;
+}
+
+.formUs,
+.additional-content {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-control {
+  width: 100%;
+}
+
+.text-area textarea {
+  width: 100%;
+  height: 100px;
+}
+
+.btn {
+  display: block;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.additional-content button:hover {
+  background-color: #0056b3;
 }
