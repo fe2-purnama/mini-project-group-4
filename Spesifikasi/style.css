@@ -87,7 +87,6 @@ nav h1 {
 }
 
 nav ul li {
-  padding-right: 16px;
   font-size: 18px;
   font-weight: 700;
   color: rgb(94, 94, 94);
@@ -196,10 +195,6 @@ form {
   header .text {
     margin-left: 120px;
     margin-right: 120px;
-  }
-
-  header .text h5 {
-    font-size: 18px;
   }
 
   /* HEADER */
